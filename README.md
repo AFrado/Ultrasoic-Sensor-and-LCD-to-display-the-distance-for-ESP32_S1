@@ -1,7 +1,7 @@
 # Ultrasoic Sensor and LCD to display the distance for ESP32_S1
 This project demonstrates how to use an ESP32 microcontroller to measure the distance to an object using an ultrasonic sensor and display the measured distance on a 16x2 LCD. The project is designed to showcase how microcontrollers can interface with sensors and output devices to provide real-time data visualization.
 
-Components:
+*Components:*
 ESP32 Microcontroller: Acts as the brain of the project, handling the input from the ultrasonic sensor and controlling the output to the LCD.
 Ultrasonic Sensor (HC-SR04): Used to measure the distance to an object by emitting ultrasonic waves and measuring the time it takes for the echo to return.
 TRIG Pin: GPIO 12
