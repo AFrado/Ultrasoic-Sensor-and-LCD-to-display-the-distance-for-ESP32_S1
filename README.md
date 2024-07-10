@@ -19,5 +19,5 @@ The project provides immediate visual feedback on the distance to an object, whi
 By completing this project, users will gain hands-on experience in interfacing an ESP32 with an ultrasonic sensor and an LCD, enhancing their understanding of embedded systems and real-time data display.
 
 
+![image](https://github.com/AFrado/Ultrasonic-Sensor-and-LCD-to-display-the-distance-for-ESP32_S1/assets/174622127/a29c870d-92e3-4578-9b29-1d2db4c7bb9c)
 
-![image](https://github.com/AFrado/Ultrasoic-Sensor-and-LCD-to-display-the-distance-for-ESP32_S1/assets/174622127/8f089abd-d46f-4061-a40a-660c9d85d57e)
