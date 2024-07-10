@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -17.7,
+      "left": -176.9,
+      "attrs": { "distance": "296" }
+    },
+    { "type": "wokwi-lcd2004", "id": "lcd1", "top": -145.64, "left": 112, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ultrasonic1:TRIG", "esp:12", "green", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "esp:14", "green", [ "v0" ] ],
+    [ "ultrasonic1:GND", "esp:CMD", "black", [ "v0" ] ],
+    [ "ultrasonic1:VCC", "esp:5V", "red", [ "v0" ] ],
+    [ "lcd1:RS", "esp:23", "green", [ "v0" ] ],
+    [ "lcd1:E", "esp:22", "green", [ "v0" ] ],
+    [ "lcd1:D4", "esp:21", "green", [ "v0" ] ],
+    [ "lcd1:D5", "esp:19", "green", [ "v0" ] ],
+    [ "lcd1:D6", "esp:18", "green", [ "v0" ] ],
+    [ "lcd1:D7", "esp:5", "green", [ "v0" ] ],
+    [ "esp:5V", "lcd1:A", "red", [ "v28.8", "h273.89" ] ],
+    [ "lcd1:K", "esp:CMD", "black", [ "v192", "h-307.2", "v-28.8" ] ]
+  ],
+  "dependencies": {}
+}
